@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ПУЛЬС — школа танцев</title>
+<meta name="description" content="ПУЛЬС — школа танцев в Астрахани. Hip-hop, contemporary, vogue, breaking. Первое занятие бесплатно." />
+<meta name="theme-color" content="#06040b" />
+<meta property="og:title" content="ПУЛЬС — школа танцев" />
+<meta property="og:description" content="Танцуй так, будто тебя слышит город. Hip-hop, contemporary, vogue, breaking." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;900&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="logo" href="#home" aria-label="ПУЛЬС — на главную">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 28 28" fill="none">
+          <path d="M2 16h4l3-9 4 18 3-13 2 4h8" stroke="url(#logoGrad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28">
+              <stop stop-color="#c084fc"/><stop offset="1" stop-color="#e879f9"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="logo__text">ПУЛЬС</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Основная навигация">
+      <a href="#about">Студия</a>
+      <a href="#styles">Направления</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#team">Педагоги</a>
+      <a href="#pricing">Абонементы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="btn btn--ghost btn--sm nav__phone" href="tel:+78512345678">+7 851 234-56-78</a>
+      <a class="btn btn--primary btn--sm" href="#contact">Пробное занятие</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__links" aria-label="Мобильная навигация">
+      <a href="#about"><span>01</span>Студия</a>
+      <a href="#styles"><span>02</span>Направления</a>
+      <a href="#schedule"><span>03</span>Расписание</a>
+      <a href="#team"><span>04</span>Педагоги</a>
+      <a href="#gallery"><span>05</span>Галерея</a>
+      <a href="#pricing"><span>06</span>Абонементы</a>
+      <a href="#contact"><span>07</span>Контакты</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a class="btn btn--primary" href="#contact">Записаться на пробное</a>
+      <p>Астрахань · ул. Кирова, 12<br/>ежедневно 08:00 — 23:00</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true">
+      <span class="orb orb--1"></span>
+      <span class="orb orb--2"></span>
+      <span class="orb orb--3"></span>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow reveal">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          школа танцев · Астрахань · с 2013
+        </p>
+
+        <h1 class="hero__title reveal" data-delay="1">
+          ТЕЛО — ЭТО<br/>
+          ЯЗЫК. <span class="grad-text">ТАНЦУЙ<br/>ГРОМЧЕ.</span>
+        </h1>
+
+        <p class="hero__lead reveal" data-delay="2">
+          Пространство, где улица встречается с искусством. Hip-hop, contemporary,
+          vogue и breaking — от первого шага до большой сцены.
+        </p>
+
+        <div class="hero__cta reveal" data-delay="3">
+          <a class="btn btn--primary" href="#contact">
+            Записаться на пробное
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--outline" href="#schedule">Смотреть расписание</a>
+        </div>
+
+        <dl class="hero__stats reveal" data-delay="4">
+          <div><dt>учеников</dt><dd><span data-count="1240">0</span>+</dd></div>
+          <div><dt>лет в танце</dt><dd><span data-count="13">0</span></dd></div>
+          <div><dt>наград</dt><dd><span data-count="38">0</span></dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__visual reveal" data-delay="2" aria-hidden="true">
+        <div class="stage">
+          <span class="ring ring--1"></span>
+          <span class="ring ring--2"></span>
+          <span class="ring ring--3"></span>
+          <span class="stage__glow"></span>
+
+          <div class="stage__card">
+            <span class="stage__tag">live set · bpm 128</span>
+            <div class="disc-wrap">
+              <span class="disc">
+                <span class="disc__label">ПУЛЬС</span>
+                <span class="disc__shine"></span>
+              </span>
+            </div>
+            <div class="eq" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <span class="stage__tag stage__tag--bottom">open class · 21:00</span>
+            <span class="stage__halo"></span>
+          </div>
+
+          <div class="chip chip--1"><span class="chip__dot"></span>набор открыт</div>
+          <div class="chip chip--2">vogue femme</div>
+          <div class="chip chip--3">1-е занятие — 0 ₽</div>
+
+          <span class="stage__vertical">movement · sound · freedom</span>
+        </div>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#about">
+      <span>листай</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>HIP-HOP</span><i>✦</i><span>CONTEMPORARY</span><i>✦</i><span>VOGUE</span><i>✦</i><span>BREAKING</span><i>✦</i><span>DANCEHALL</span><i>✦</i><span>JAZZ FUNK</span><i>✦</i>
+      <span>HIP-HOP</span><i>✦</i><span>CONTEMPORARY</span><i>✦</i><span>VOGUE</span><i>✦</i><span>BREAKING</span><i>✦</i><span>DANCEHALL</span><i>✦</i><span>JAZZ FUNK</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__intro">
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>о студии</p>
+          <h2 class="section__title reveal" data-delay="1">
+            НЕ ШКОЛА.<br/><span class="grad-text">ВТОРОЙ ДОМ.</span>
+          </h2>
+          <p class="section__lead reveal" data-delay="2">
+            Мы собрали пространство без оценок и «правильно/неправильно».
+            Здесь учат слышать музыку, доверять телу и находить свой почерк — в зале,
+            на баттле и на сцене.
+          </p>
+          <p class="section__lead reveal" data-delay="3">
+            Три зала с профессиональным светом и звуком, раздевалки, зона отдыха
+            и открытые джемы каждую пятницу.
+          </p>
+          <a class="link-arrow reveal" data-delay="4" href="#team">
+            Познакомиться с командой
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="about__cards">
+          <article class="feature reveal" data-delay="1">
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v18M7 7v10M17 7v10M3 10v4M21 10v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Музыка первична</h3>
+            <p>Начинаем с грува, а не с комбинаций. Ты услышишь бит раньше, чем выучишь шаг.</p>
+          </article>
+          <article class="feature reveal" data-delay="2">
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 2.4 5.6L20 11l-5.6 2.4L12 19l-2.4-5.6L4 11l5.6-2.4L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Свой стиль</h3>
+            <p>Не копируем хореографию — разбираем механику и собираем твою манеру движения.</p>
+          </article>
+          <article class="feature reveal" data-delay="3">
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 19.5c.6-3.4 2.8-5.3 5.5-5.3s4.9 1.9 5.5 5.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="17" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/><path d="M15.6 14.6c2.6-.2 4.4 1.6 4.9 4.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Команда рядом</h3>
+            <p>Небольшие группы до 14 человек: педагог видит каждого и подсказывает лично.</p>
+          </article>
+          <article class="feature reveal" data-delay="4">
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 21V9l8-5v12" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="5.5" cy="20" r="2.5" stroke="currentColor" stroke-width="1.6"/><circle cx="16.5" cy="15.5" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <h3>Сцена с первого года</h3>
+            <p>Отчётные шоу, баттлы и open-air — показываем результат, а не храним в зале.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STYLES ============ -->
+  <section class="section styles" id="styles">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>направления</p>
+          <h2 class="section__title reveal" data-delay="1">ВЫБЕРИ<br/><span class="grad-text">СВОЙ РИТМ</span></h2>
+        </div>
+        <p class="section__lead section__lead--right reveal" data-delay="2">
+          Шесть направлений, один подход: техника, музыкальность и удовольствие от процесса.
+          Можно совмещать — абонемент действует на все классы.
+        </p>
+      </div>
+
+      <div class="styles__grid">
+        <article class="style-card reveal" data-delay="1">
+          <span class="style-card__num">01</span>
+          <h3>Hip-Hop</h3>
+          <p>Грув, bounce и изоляции. Классика улицы — от базовых шагов до полноценных рутин.</p>
+          <div class="style-card__meta">
+            <span class="tag">все уровни</span>
+            <span class="tag tag--ghost">60 мин</span>
+            <span class="style-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="style-card reveal" data-delay="2">
+          <span class="style-card__num">02</span>
+          <h3>Contemporary</h3>
+          <p>Вес, дыхание и падение. Танец, где важнее честность движения, чем идеальная линия.</p>
+          <div class="style-card__meta">
+            <span class="tag">средний / про</span>
+            <span class="tag tag--ghost">75 мин</span>
+            <span class="style-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="style-card reveal" data-delay="3">
+          <span class="style-card__num">03</span>
+          <h3>Vogue</h3>
+          <p>Hands performance, runway и уверенность. Балльная культура, в которой ты — главный герой.</p>
+          <div class="style-card__meta">
+            <span class="tag">новичкам ок</span>
+            <span class="tag tag--ghost">60 мин</span>
+            <span class="style-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="style-card reveal" data-delay="1">
+          <span class="style-card__num">04</span>
+          <h3>Breaking</h3>
+          <p>Топрок, футворк и пауэры. Фундамент хип-хопа — сила, контроль и характер.</p>
+          <div class="style-card__meta">
+            <span class="tag">все уровни</span>
+            <span class="tag tag--ghost">90 мин</span>
+            <span class="style-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="style-card reveal" data-delay="2">
+          <span class="style-card__num">05</span>
+          <h3>Dancehall</h3>
+          <p>Ямайская энергия, женственность и работа бёдрами. Много кардио и ещё больше свободы.</p>
+          <div class="style-card__meta">
+            <span class="tag">для всех</span>
+            <span class="tag tag--ghost">60 мин</span>
+            <span class="style-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="style-card reveal" data-delay="3">
+          <span class="style-card__num">06</span>
+          <h3>Jazz Funk</h3>
+          <p>Сценический драйв, чёткость и подача. Любимый формат для съёмок и шоу-программ.</p>
+          <div class="style-card__meta">
+            <span class="tag">средний</span>
+            <span class="tag tag--ghost">75 мин</span>
+            <span class="style-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section class="section schedule" id="schedule">
+    <div class="container">
+      <div class="section__head section__head--tight">
+        <div>
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>расписание</p>
+          <h2 class="section__title reveal" data-delay="1">НЕДЕЛЯ<br/><span class="grad-text">В БИТАХ</span></h2>
+        </div>
+        <p class="section__lead section__lead--right reveal" data-delay="2">
+          Залы открыты с 08:00 до 23:00. Пропущенное занятие можно отработать в течение месяца.
+        </p>
+      </div>
+
+      <div class="schedule__tabs reveal" role="tablist" aria-label="Дни недели">
+        <button class="day-tab is-active" role="tab" aria-selected="true" aria-controls="dayPanel" data-day="0">ПН</button>
+        <button class="day-tab" role="tab" aria-selected="false" aria-controls="dayPanel" data-day="1">ВТ</button>
+        <button class="day-tab" role="tab" aria-selected="false" aria-controls="dayPanel" data-day="2">СР</button>
+        <button class="day-tab" role="tab" aria-selected="false" aria-controls="dayPanel" data-day="3">ЧТ</button>
+        <button class="day-tab" role="tab" aria-selected="false" aria-controls="dayPanel" data-day="4">ПТ</button>
+        <button class="day-tab" role="tab" aria-selected="false" aria-controls="dayPanel" data-day="5">СБ</button>
+        <button class="day-tab" role="tab" aria-selected="false" aria-controls="dayPanel" data-day="6">ВС</button>
+        <span class="day-tab__hint">выбери день →</span>
+      </div>
+
+      <div class="schedule__panel reveal" id="dayPanel" role="tabpanel" aria-live="polite"></div>
+
+      <p class="schedule__note reveal">
+        Не нашёл подходящее время? <a href="#contact">Напиши нам</a> — соберём индивидуальный график.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>педагоги</p>
+          <h2 class="section__title reveal" data-delay="1">ЛЮДИ,<br/><span class="grad-text">КОТОРЫЕ ВЕДУТ</span></h2>
+        </div>
+        <p class="section__lead section__lead--right reveal" data-delay="2">
+          Действующие танцоры, хореографы и судьи баттлов. Учат тому, что делают сами — каждый день.
+        </p>
+      </div>
+
+      <div class="team__grid">
+        <article class="coach reveal" data-delay="1">
+          <div class="coach__photo coach__photo--a">
+            <span class="coach__initials">МД</span>
+            <span class="coach__ring" aria-hidden="true"></span>
+            <span class="coach__badge">hip-hop</span>
+          </div>
+          <div class="coach__body">
+            <h3>Марк Дэй</h3>
+            <p class="coach__role">Hip-Hop · Breaking</p>
+            <p class="coach__bio">12 лет в культуре. Финалист «Street Style Cup», судья городских баттлов.</p>
+            <div class="coach__socials">
+              <a href="#" aria-label="Instagram Марка">IG</a>
+              <a href="#" aria-label="Telegram Марка">TG</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="coach reveal" data-delay="2">
+          <div class="coach__photo coach__photo--b">
+            <span class="coach__initials">АВ</span>
+            <span class="coach__ring" aria-hidden="true"></span>
+            <span class="coach__badge">contemporary</span>
+          </div>
+          <div class="coach__body">
+            <h3>Алиса Ветрова</h3>
+            <p class="coach__role">Contemporary · Jazz Funk</p>
+            <p class="coach__bio">Хореограф театра «Пластика». Работала с фестивалями «Территория» и «Архстояние».</p>
+            <div class="coach__socials">
+              <a href="#" aria-label="Instagram Алисы">IG</a>
+              <a href="#" aria-label="Telegram Алисы">TG</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="coach reveal" data-delay="3">
+          <div class="coach__photo coach__photo--c">
+            <span class="coach__initials">НС</span>
+            <span class="coach__ring" aria-hidden="true"></span>
+            <span class="coach__badge">vogue</span>
+          </div>
+          <div class="coach__body">
+            <h3>Ника Стронг</h3>
+            <p class="coach__role">Vogue · Dancehall</p>
+            <p class="coach__bio">Мать дома «Neon House». Победительница Vogue Ball Astrakhan, педагог с 2016 года.</p>
+            <div class="coach__socials">
+              <a href="#" aria-label="Instagram Ники">IG</a>
+              <a href="#" aria-label="Telegram Ники">TG</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section__head section__head--tight">
+        <div>
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>атмосфера</p>
+          <h2 class="section__title reveal" data-delay="1">СВЕТ.<br/><span class="grad-text">ПОТ. МАГИЯ.</span></h2>
+        </div>
+        <p class="section__lead section__lead--right reveal" data-delay="2">
+          Как это выглядит изнутри: репетиции, джемы и ночи, после которых не хочется уходить.
+        </p>
+      </div>
+
+      <div class="gallery__grid">
+        <figure class="poster poster--big poster--violet reveal" data-delay="1">
+          <div class="poster__art"><span>MOV</span><span>E</span></div>
+          <figcaption><span class="poster__label">open class</span><b>Ночь движения</b></figcaption>
+        </figure>
+        <figure class="poster poster--magenta reveal" data-delay="2">
+          <div class="poster__art"><span>NO</span><span>RULES</span></div>
+          <figcaption><span class="poster__label">jam session</span><b>Пятничный джем</b></figcaption>
+        </figure>
+        <figure class="poster poster--chrome reveal" data-delay="3">
+          <div class="poster__art"><span>BPM</span><span>128</span></div>
+          <figcaption><span class="poster__label">backstage</span><b>Разогрев</b></figcaption>
+        </figure>
+        <figure class="poster poster--dark reveal" data-delay="1">
+          <div class="poster__art"><span>FLOW</span><span>STATE</span></div>
+          <figcaption><span class="poster__label">battle</span><b>Финал сезона</b></figcaption>
+        </figure>
+        <figure class="poster poster--pink reveal" data-delay="2">
+          <div class="poster__art"><span>SHE</span><span>POWER</span></div>
+          <figcaption><span class="poster__label">vogue ball</span><b>Neon Ball</b></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>абонементы</p>
+          <h2 class="section__title reveal" data-delay="1">БЕЗ<br/><span class="grad-text">МЕЛКОГО ШРИФТА</span></h2>
+        </div>
+        <p class="section__lead section__lead--right reveal" data-delay="2">
+          Заморозка до 14 дней, перенос занятий и рассрочка на 3 месяца — включены в любой тариф.
+        </p>
+      </div>
+
+      <div class="pricing__grid">
+        <article class="price reveal" data-delay="1">
+          <p class="price__name">Первое касание</p>
+          <p class="price__value"><span>0</span> ₽</p>
+          <p class="price__desc">Пробный класс любого направления. Просто приходи в удобной одежде.</p>
+          <ul class="price__list">
+            <li>60–90 минут с педагогом</li>
+            <li>Знакомство со студией</li>
+            <li>Разбор уровня и целей</li>
+          </ul>
+          <a class="btn btn--outline" href="#contact">Записаться</a>
+        </article>
+
+        <article class="price price--featured reveal" data-delay="2">
+          <span class="price__flag">выбор студентов</span>
+          <p class="price__name">Ритм</p>
+          <p class="price__value"><span>6 900</span> ₽<em>/ мес</em></p>
+          <p class="price__desc">8 занятий в месяц: 2 раза в неделю, любые направления.</p>
+          <ul class="price__list">
+            <li>8 классов на выбор</li>
+            <li>Заморозка 14 дней</li>
+            <li>Участие в open-джемах</li>
+            <li>Скидка 15% на мерч</li>
+          </ul>
+          <a class="btn btn--primary" href="#contact">Выбрать «Ритм»</a>
+        </article>
+
+        <article class="price reveal" data-delay="3">
+          <p class="price__name">Безлимит</p>
+          <p class="price__value"><span>12 900</span> ₽<em>/ мес</em></p>
+          <p class="price__desc">Все классы, все залы и сцена. Для тех, кто уже не может иначе.</p>
+          <ul class="price__list">
+            <li>Неограниченные занятия</li>
+            <li>Отчётный концерт</li>
+            <li>Индивидуальная постановка</li>
+            <li>Прокат зала 4 ч / мес</li>
+          </ul>
+          <a class="btn btn--outline" href="#contact">Стать безлимитным</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section faq" id="faq">
+    <div class="container faq__grid">
+      <div class="faq__aside">
+        <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>вопросы</p>
+        <h2 class="section__title reveal" data-delay="1">ЧТО<br/><span class="grad-text">СПРОСИТЬ</span></h2>
+        <p class="section__lead reveal" data-delay="2">Не нашёл ответ? Напиши в телеграм — отвечаем в течение часа.</p>
+        <a class="btn btn--outline reveal" data-delay="3" href="#contact">Задать вопрос</a>
+      </div>
+
+      <div class="faq__list reveal" data-delay="2">
+        <details class="faq__item">
+          <summary>Я никогда не танцевал. Справлюсь?</summary>
+          <p>Да. Половина наших учеников пришла с нуля. В группах для новичков темп специально спокойный: сначала база и координация, потом комбинации. Через месяц ты удивишься, насколько тело стало послушным.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Что надеть на первое занятие?</summary>
+          <p>Любая удобная одежда, в которой можно свободно двигаться, и чистые кроссовки. Всё остальное — вода, полотенце, шкафчик — есть в студии.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Можно ли совмещать направления?</summary>
+          <p>Да, абонемент «Ритм» и «Безлимит» действуют на все классы. Совмещение hip-hop и contemporary — самая популярная связка: контроль и свобода работают в паре.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Есть ли группы для детей и подростков?</summary>
+          <p>Да, по субботам: 6–10 лет в 11:00 и 11–15 лет в 12:30. Родители могут подождать в лаунж-зоне с кофе.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Как оплатить и можно ли заморозить абонемент?</summary>
+          <p>Картой на ресепшене или по ссылке. Заморозка до 14 дней доступна один раз за месяц, перенос занятий — без ограничений в рамках оплаченного периода.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__panel">
+        <div class="contact__info">
+          <p class="eyebrow reveal"><span class="pulse-dot" aria-hidden="true"></span>запись</p>
+          <h2 class="section__title reveal" data-delay="1">ПЕРВЫЙ ШАГ<br/><span class="grad-text">НАЧИНАЕТСЯ ЗДЕСЬ</span></h2>
+          <p class="section__lead reveal" data-delay="2">
+            Оставь заявку — подберём направление, день и педагога. Пробное занятие бесплатное,
+            без обязательств и подписок.
+          </p>
+
+          <ul class="contact__list reveal" data-delay="3">
+            <li>
+              <span class="contact__ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+              </span>
+              <div><b>Астрахань, ул. Кирова, 12</b><span>вход со двора, 2 этаж</span></div>
+            </li>
+            <li>
+              <span class="contact__ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5.5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <div><b>Пн–Вс · 08:00 — 23:00</b><span>администратор на связи с 10:00</span></div>
+            </li>
+            <li>
+              <span class="contact__ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3.5l2 5-2.5 1.5a11 11 0 0 0 5.5 5.5l1.5-2.5 5 2V19a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              </span>
+              <div><b><a href="tel:+78512345678">+7 851 234-56-78</a></b><span>звонки и сообщения</span></div>
+            </li>
+          </ul>
+
+          <div class="contact__socials reveal" data-delay="4">
+            <a href="#" aria-label="Telegram">Telegram</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="VK">VK</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+          </div>
+        </div>
+
+        <form class="form reveal" data-delay="2" id="bookingForm" novalidate>
+          <div class="form__head">
+            <h3>Заявка на пробное</h3>
+            <span>отвечаем за 15 минут</span>
+          </div>
+
+          <div class="field">
+            <label for="name">Как тебя зовут</label>
+            <input id="name" name="name" type="text" placeholder="Имя" autocomplete="name" required />
+            <small class="field__error" data-error-for="name">Напиши, пожалуйста, имя</small>
+          </div>
+
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required />
+            <small class="field__error" data-error-for="phone">Нужен номер для связи</small>
+          </div>
+
+          <div class="field">
+            <label for="style">Направление</label>
+            <div class="select-wrap">
+              <select id="style" name="style">
+                <option>Пока не знаю — подскажите</option>
+                <option>Hip-Hop</option>
+                <option>Contemporary</option>
+                <option>Vogue</option>
+                <option>Breaking</option>
+                <option>Dancehall</option>
+                <option>Jazz Funk</option>
+              </select>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Комментарий <span class="field__optional">необязательно</span></label>
+            <textarea id="message" name="message" rows="3" placeholder="Удобные дни, опыт, вопросы"></textarea>
+          </div>
+
+          <button class="btn btn--primary btn--full" type="submit">
+            Отправить заявку
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <p class="form__note">Нажимая кнопку, ты соглашаешься с <a href="#">политикой конфиденциальности</a>. Никакого спама — только по делу.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="logo" href="#home" aria-label="ПУЛЬС — на главную">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none">
+              <path d="M2 16h4l3-9 4 18 3-13 2 4h8" stroke="url(#logoGrad2)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="logoGrad2" x1="0" y1="0" x2="28" y2="28">
+                  <stop stop-color="#c084fc"/><stop offset="1" stop-color="#e879f9"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="logo__text">ПУЛЬС</span>
+        </a>
+        <p>Школа танцев, где движение становится языком. С 2013 года.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Меню в подвале">
+        <div>
+          <p>Студия</p>
+          <a href="#about">О нас</a>
+          <a href="#team">Педагоги</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#pricing">Абонементы</a>
+        </div>
+        <div>
+          <p>Направления</p>
+          <a href="#styles">Hip-Hop</a>
+          <a href="#styles">Contemporary</a>
+          <a href="#styles">Vogue</a>
+          <a href="#styles">Breaking</a>
+        </div>
+        <div>
+          <p>Контакты</p>
+          <a href="tel:+78512345678">+7 851 234-56-78</a>
+          <a href="mailto:hello@pulse.dance">hello@pulse.dance</a>
+          <a href="#contact">Кирова, 12</a>
+          <a href="#contact">08:00 — 23:00</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> ПУЛЬС. Все права защищены.</p>
+      <p class="footer__made">сделано с ритмом <span aria-hidden="true">✦</span></p>
+      <a href="#home" class="footer__up">наверх <span aria-hidden="true">↑</span></a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="toast__icon" aria-hidden="true">✦</span>
+  <div><b>Заявка отправлена!</b><span>Свяжемся с тобой в течение 15 минут.</span></div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
